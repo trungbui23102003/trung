@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	box-sizing:border-box;
+}
+.max-width{
+    max-width: 1300px;
+	padding: 0 80px;
+	margin: auto;
+}
+.navbar{
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    padding: 20px 0px;
+    /*background: crimson;*/
+    transition: all 1s ease;
+}
+.navbar .max-width{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.navbar .menu a{
+    color: white;
+    transition: all 1s ease;
+}
+.navbar .menu li{
+    display: inline-block;
+    margin: 10px ;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 1s ease;
+}
+.navbar .menu li a:hover{
+    color: greenyellow;
+}
+.navbar .max-width .logo{
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a{
+    color: white;
+}
+.navbar .logo a span{
+    color: rgb(220, 20, 23);
+}
+.home{
+    background: url(banner.jpg) no-repeat center;
+    height: 100vh;
+    min-height: 500px;
+    display: flex;
+}
+.home .home-content .text-1{
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+}
+.home .home-content .text-1 span{
+    color: crimson;
+}
+.home .home-content .text-2{
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+.home .home-content .text-3{
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+.home .max-width {
+	margin: auto 0px auto 40px;
+	font-family: 'ubuntu', sans-serif;
+}
+.navbar.sticky{
+    background: crimson;
+    transition: all 1s ease;
+}
+.navbar.sticky:hover{
+    background: crimson;
+
+}
+.navbar.sticky .logo a span{
+    color: white;
+    transition: all 1s ease;
+}
+.navbar.sticky .menu li a:hover{
+    color: aqua;
+    transition: all 1s ease;
+}
+.about .about-content .image-2 img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.about .title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 45px;
+    position: relative;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+.about .title::before{
+    content: "";
+    background: black;
+    height: 3px;
+    width: 150px;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .image-2{
+    width: 45%;
+}
+.about .about-content .text-image2{
+    width: 55%;
+}
+.about .about-content .text-image2 .text{
+    font-size: 45px;
+    font-weight: 600;
+
+}
+.about .about-content .text-image2 .text span{
+    color: red;
+}
+.about .about-content .text-image2 a{
+    background: crimson;
+    color: aliceblue;
+    padding: 10px 10px;
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+.about .about-content .text-image2 a:hover{
+    background:yellow;
+    color: aqua;
+}
+.about .max-width{
+    background: aqua;
+}
